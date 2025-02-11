@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Registration and Login</title>
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Registration Form -->
+        <div id="registration-container">
+            <h2>Register</h2>
+            <input type="text" id="reg-username" placeholder="Username" required>
+            <input type="password" id="reg-password" placeholder="Password" required>
+            <input type="password" id="reg-confirm-password" placeholder="Confirm Password" required>
+            <button id="register-btn">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-container" style="display: none;">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button id="login-btn" disabled>Login</button>
+        </div>
+
+        <!-- Profile Page -->
+        <div id="profile-container" class="profile-container">
+            <h2>Profile</h2>
+            <p>Username: <span id="profile-username"></span></p>
+            <input type="text" id="new-username" placeholder="New Username">
+            <input type="password" id="new-password" placeholder="New Password">
+            <button id="save-btn" disabled>Save Changes</button>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
